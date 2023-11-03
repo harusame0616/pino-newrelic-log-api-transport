@@ -5,7 +5,7 @@ import {
 } from '@harusame0616/pino-newrelic-log-api-transport';
 
 const options: NewrelicLogAPITransportOption = {
-  // Set the environment variable NEWRELIC_LICENSE_KEY to the license key or set the license key as an argument.
+  // Set the environment variable NEW_RELIC_LICENSE_KEY to the license key or set the license key as an argument.
   // If both are set, the argument takes precedence.
   // licenseKey: 'YOUR_LICENSE_KEY',
 
@@ -27,7 +27,7 @@ const logger = pino({
   base: {
     entity: {
       // your app name
-      name: process.env.NEWRELIC_APP_NAME,
+      name: process.env.NEW_RELIC_APP_NAME,
     },
   },
   formatters: {

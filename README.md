@@ -28,7 +28,7 @@ import {
 } from '@harusame0616/pino-newrelic-log-api-transport';
 
 const options: NewrelicLogAPITransportOption = {
-  // licenseKey: <YOUR_LICENSE_KEY> or set NEWRELIC_LICENSE_KEY in environment variables
+  // licenseKey: <YOUR_LICENSE_KEY> or set NEW_RELIC_LICENSE_KEY in environment variables
   endpoint: endpointEnum.us,
 };
 
@@ -39,7 +39,7 @@ const logger = pino({
   base: {
     entity: {
       // your app name
-      name: process.env.NEWRELIC_APP_NAME,
+      name: process.env.NEW_RELIC_APP_NAME,
     },
   },
   formatters: {
@@ -61,5 +61,5 @@ https://github.com/vercel/next.js/discussions/46987#discussioncomment-6986115
 and run bellow
 
 ```bash
-NEWRELIC_LICENSE_KEY=YOUR_LICENSE NEWRELIC_APP_NAME=YOUR_APP_NAME node YOUR_APP
+NEW_RELIC_LICENSE_KEY=YOUR_LICENSE NEW_RELIC_APP_NAME=YOUR_APP_NAME node YOUR_APP
 ```
