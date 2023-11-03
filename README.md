@@ -15,7 +15,7 @@ If for some reason you cannot use the automatic log forwarding feature with node
 ## Installation
 
 ```bash
-pnpm  pino-newrelic-log-api-transport
+pnpm  @harusame0616/pino-newrelic-log-api-transport
 ```
 
 ## Usage
@@ -25,7 +25,7 @@ import pino from 'pino';
 import {
   NewrelicLogAPITransportOption,
   endpointEnum,
-} from 'pino-newrelic-log-api-transport';
+} from '@harusame0616/pino-newrelic-log-api-transport';
 
 const options: NewrelicLogAPITransportOption = {
   // licenseKey: <YOUR_LICENSE_KEY> or set NEWRELIC_LICENSE_KEY in environment variables
@@ -46,7 +46,7 @@ const logger = pino({
     level: (label) => ({ level: label }),
   },
   transport: {
-    target: 'pino-newrelic-log-api-transport',
+    target: '@harusame0616/pino-newrelic-log-api-transport',
     options: options,
   },
 });
