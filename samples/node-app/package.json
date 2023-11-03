@@ -12,7 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "pino": "^8.16.1",
-    "pino-newrelic-log-api-transport": "link:..",
+    "pino-newrelic-log-api-transport": "link:../../",
     "typescript": "^5.2.2"
   },
   "devDependencies": {
