@@ -1,5 +1,5 @@
 {
-  "name": "pino-newrelic-log-api-transport",
+  "name": "@harusame0616/pino-newrelic-log-api-transport",
   "version": "0.1.0",
   "description": "pino transport for newrelic log api",
   "main": "dist/index.js",
@@ -12,8 +12,8 @@
     "format:write": "prettier -w src"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "harusame0616",
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.8.10",
     "@typescript-eslint/eslint-plugin": "^6.9.1",
@@ -25,5 +25,14 @@
   },
   "dependencies": {
     "pino-abstract-transport": "^1.1.0"
-  }
+  },
+  "types": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harusame0616/pino-newrelic-log-api-transport.git"
+  },
+  "bugs": {
+    "url": "https://github.com/harusame0616/pino-newrelic-log-api-transport/issues"
+  },
+  "homepage": "https://github.com/harusame0616/pino-newrelic-log-api-transport#readme"
 }
