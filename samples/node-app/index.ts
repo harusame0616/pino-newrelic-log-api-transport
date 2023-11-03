@@ -2,7 +2,7 @@ import pino from 'pino';
 import {
   NewrelicLogAPITransportOption,
   endpointEnum,
-} from 'pino-newrelic-log-api-transport';
+} from '@harusame0616/pino-newrelic-log-api-transport';
 
 const options: NewrelicLogAPITransportOption = {
   // Set the environment variable NEWRELIC_LICENSE_KEY to the license key or set the license key as an argument.
@@ -34,7 +34,7 @@ const logger = pino({
     level: (label) => ({ level: label }),
   },
   transport: {
-    target: 'pino-newrelic-log-api-transport',
+    target: '@harusame0616/pino-newrelic-log-api-transport',
     options: options,
   },
 });
