@@ -20,10 +20,10 @@ export default async function newRelicTransport({
   endpoint,
   headerLessAuth = false,
 }: NewrelicLogAPITransportOption) {
-  const apiKey = licenseKey ?? process.env.NEWRELIC_LICENSE_KEY;
+  const apiKey = licenseKey ?? process.env.NEW_RELIC_LICENSE_KEY;
   if (!apiKey) {
     throw new Error(
-      'License key must be provided as licenseKey option or in process.env.NEWRELIC_LICENSE_KEY'
+      'License key must be provided as licenseKey option or in process.env.NEW_RELIC_LICENSE_KEY'
     );
   }
 

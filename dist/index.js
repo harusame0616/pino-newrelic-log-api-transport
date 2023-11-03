@@ -28,9 +28,9 @@ exports.endpointEnum = {
 };
 function newRelicTransport({ licenseKey, endpoint, headerLessAuth = false, }) {
     return __awaiter(this, void 0, void 0, function* () {
-        const apiKey = licenseKey !== null && licenseKey !== void 0 ? licenseKey : process.env.NEWRELIC_LICENSE_KEY;
+        const apiKey = licenseKey !== null && licenseKey !== void 0 ? licenseKey : process.env.NEW_RELIC_LICENSE_KEY;
         if (!apiKey) {
-            throw new Error('License key must be provided as licenseKey option or in process.env.NEWRELIC_LICENSE_KEY');
+            throw new Error('License key must be provided as licenseKey option or in process.env.NEW_RELIC_LICENSE_KEY');
         }
         const endpointUrl = new URL(endpoint);
         const headers = {
